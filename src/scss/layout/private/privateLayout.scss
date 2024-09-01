@@ -1,0 +1,32 @@
+.admin-layout {
+  height: fit-content;
+  padding: 12px;
+  width: 98%;
+  margin: 0 auto;
+  box-shadow: -1px 0 10px 1px rgb(0 0 0 / 30%);
+}
+.ant-dropdown-menu-title-content{
+  text-align: right !important;
+}
+.jump-to-top-btn {
+  position: fixed;
+  right: 35px;
+  bottom: 40px;
+  border-radius: 10px;
+  z-index: 100000;
+  outline: none;
+  border: none;
+  padding: 6.5px 10px 4px 10px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: #0e929e !important;
+  }
+
+  &--icon {
+    color: $white-base;
+    font-size: 2em;
+  }
+}

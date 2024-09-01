@@ -1,0 +1,329 @@
+.ant-upload-list-picture-card {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper-upload {
+  flex-direction: column;
+}
+
+.wrapper-upload .ant-upload-list-picture-card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.wrapper-upload-foreign {
+  flex-direction: column;
+}
+
+.ant-upload-list-picture .ant-upload-list-item-error,
+.ant-upload-list-picture-card .ant-upload-list-item-error {
+  border-color: rgb(204, 204, 204) !important;
+}
+
+.wrapper-upload-foreign .ant-upload-list-picture-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-upload-picture-card-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.ant-upload.ant-upload-select-picture-card > .ant-upload {
+  justify-content: flex-end !important;
+}
+
+.wrapper-upload-foreign
+  .ant-upload.ant-upload-select-picture-card
+  > .ant-upload {
+  justify-content: stretch !important;
+}
+
+.ant-upload-list-picture-card
+  .ant-upload-list-item:hover
+  .ant-upload-list-item-info::before {
+  opacity: 0 !important;
+}
+.ant-upload-list-picture .ant-upload-list-item,
+.ant-upload-list-picture-card .ant-upload-list-item {
+  border: none;
+  padding: 0 !important;
+}
+
+.ant-upload-list-item-error .ant-upload-list-item-card-actions-btn {
+  display: none !important;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-actions {
+  display: none !important;
+}
+
+.wrapper-upload .ant-upload-list-picture-card-container {
+  width: 200px;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.wrapper-upload-foreign .ant-upload-list-picture-card-container {
+  width: 200px;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.ant-upload-list-picture-card-container {
+  margin: 0 !important;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  flex: 1;
+  margin: 0 !important;
+  border: none;
+  background-color: inherit !important;
+}
+
+.ant-upload-list-item {
+  margin: 0 !important;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+  object-fit: cover !important;
+}
+
+.wrapper-upload-img {
+  display: flex;
+  margin-left: 30px;
+}
+
+.wrapper-upload-img-col {
+  width: 65%;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.wrapper-validation {
+  width: 63.5%;
+}
+
+.wrapper-upload-img-foreign {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-upload-img-col-foreign {
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.select-picture-btn-register {
+  width: 200px;
+  background-color: #57b5e3 !important;
+  border-color: #57b5e3;
+  border-radius: 2px !important;
+}
+
+.select-picture-btn-register-foreign {
+  width: 200px;
+  background-color: #57b5e3 !important;
+  border-color: #57b5e3;
+  border-radius: 2px !important;
+}
+
+.select-picture-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 18px 10px;
+  background-color: #449cec;
+  color: white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.select-picture-btn:hover {
+  background-color: #449cec !important;
+  color: white;
+}
+
+.select-picture-btn:focus {
+  background-color: #449cec !important;
+  color: white;
+}
+
+.select-picture-btn-register:hover {
+  color: white !important;
+}
+
+.select-picture-btn-register:focus {
+  color: white !important;
+}
+
+.ant-upload-list-item-image {
+  width: 100%;
+}
+
+.personnel-text {
+  margin-bottom: 10px;
+}
+
+.personnel-text-foreign {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.wrapper-size-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.wrapper-size-pic-error {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.wrapper-size-pic-foreign {
+  display: flex;
+  margin-top: 10px;
+}
+
+.icon-folder-rej {
+  font-size: 20px;
+}
+
+.icon-folder {
+  font-size: 20px;
+}
+
+.w-btn-edit-bussines {
+  width: 70px !important;
+  margin-left: 3px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 1450px) {
+  .wrapper-upload-img-col {
+    width: 80%;
+  }
+
+  .wrapper-validation {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .select-pic {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .icon-folder {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ant-upload-list-picture-card-container {
+    flex: unset;
+  }
+
+  .ant-upload.ant-upload-select-picture-card > .ant-upload {
+    justify-content: center !important;
+  }
+
+  .ant-upload.ant-upload-select-picture-card {
+    width: unset;
+  }
+
+  .wrapper-upload-img {
+    margin-top: 15px;
+  }
+
+  .wrapper-upload-img-foreign {
+    margin-top: 15px;
+  }
+
+  .select-pic {
+    width: unset;
+    font-size: unset;
+  }
+
+  .icon-folder {
+    font-size: unset;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper-upload .ant-upload-list-picture-card {
+    align-items: center !important;
+  }
+
+  .wrapper-size-pic {
+    margin-right: 0;
+  }
+
+  .wrapper-upload-img-col {
+    padding: 0 !important;
+    align-items: center;
+  }
+
+  .wrapper-validation {
+    padding: 0;
+    align-items: center !important;
+  }
+
+  .wrapper-upload-foreign .ant-upload-list-picture-card {
+    align-items: center !important;
+  }
+
+  .wrapper-size-pic-foreign {
+    justify-content: center;
+  }
+
+  .wrapper-upload-img-col-foreign {
+    padding: 0 !important;
+  }
+
+  .personnel-text {
+    margin-left: 150px !important;
+  }
+
+  .personnel-text-foreign {
+    margin-left: 150px !important;
+  }
+
+  .wrapper-upload-foreign
+    .ant-upload.ant-upload-select-picture-card
+    > .ant-upload {
+    justify-content: center !important;
+  }
+}
+
+// .ant-upload-list-item-thumbnail > img {
+//   width: 200px !important;
+//   height: 200px !important;
+//   max-width: unset !important;
+// }
+
+// .ant-upload-list-picture .ant-upload-list-item-error, .ant-upload-list-picture-card .ant-upload-list-item-error{
+// border: none;
+// }
+
+// .ant-upload-list-item-name{
+//   display: none !important;
+// }
+
+// .ant-upload-list-item-card-actions {
+//   display: none !important;
+// }

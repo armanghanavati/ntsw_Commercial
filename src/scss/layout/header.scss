@@ -1,0 +1,140 @@
+.login-header {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  background-color: $blue-input;
+
+  section {
+    width: 33%;
+    display: flex;
+    align-items: center;
+  }
+
+  .img2 {
+    justify-content: center;
+  }
+
+  .img1 {
+    justify-content: flex-start;
+    margin-right: 50px;
+  }
+
+  .img3 {
+    justify-content: flex-end;
+    margin-left: 30px;
+  }
+}
+
+.ant-menu-overflow {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c8bb0 !important;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.ant-menu-horizontal {
+  margin-top: 3px;
+}
+
+.ant-menu {
+  color: $white-base !important;
+  font-size: 15px !important;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+  background-color: #0c8bb0 !important;
+  text-align: right !important;
+  max-width: 100px !important;
+}
+
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:hover {
+  color: $white-base !important;
+}
+
+.register-layout {
+  height: 100vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 80, 143, 1) 41%,
+    rgb(97, 179, 244) 83%
+  );
+}
+
+.register-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004175 !important;
+  border-bottom: solid 5px #035d8a !important;
+}
+
+.register-header-foreign {
+  direction: ltr;
+}
+
+.img1-register {
+  width: 15%;
+  display: flex;
+  justify-content: end;
+}
+
+.img1-register-foreign {
+  justify-content: start;
+}
+
+.img1-register img {
+  width: 23%;
+}
+
+.img2-register {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.img3-register {
+  width: 15%;
+  display: flex;
+}
+
+.img3-register-foreign {
+  justify-content: end;
+}
+
+.img3-register img {
+  width: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-header {
+    .img1,
+    .img3 {
+      display: none;
+    }
+
+    section {
+      width: 100%;
+    }
+  }
+
+  .register-header {
+    .img1-register,
+    .img3-register {
+      display: none;
+    }
+  }
+
+  .img2-register {
+    width: 100%;
+  }
+}

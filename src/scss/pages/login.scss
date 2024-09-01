@@ -1,0 +1,33 @@
+.login-page {
+  max-width: 400px;
+  min-height: 550px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 60px 30px;
+    font-family: 'w-yekan', 'yekan', 'vazir';
+
+    h2 {
+      color: $gray-middle;
+      margin-bottom: 60px;
+    }
+
+    .login-btn {
+      display: flex;
+
+      button {
+        margin: 10px 0 10px 20px;
+        width: 120px;
+        background-color: $green-color-base;
+        color: $white-base;
+        font-family: inherit;
+      }
+    }
+  }
+}

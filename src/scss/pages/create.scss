@@ -1,0 +1,230 @@
+.wizard {
+  margin: -12px;
+  font-size: $font-menu;
+  font-weight: bold !important;
+  font-style: bold !important;
+  line-height: 1;
+  display: inline-block;
+  margin: -12px;
+
+  &--step {
+    &__level-number {
+      border: 2px solid #c2bdbd;
+      color: #c2bdbd;
+      font-size: 11px;
+      border-radius: 100%;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      width: 24px;
+      height: 23px;
+      line-height: 20px;
+      text-align: center;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    &__level-check {
+      border: 2px solid #a0d468;
+      color: #a0d468;
+      font-size: $font-menu;
+      border-radius: 100%;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 20px;
+      text-align: center;
+      margin-left: 10px;
+      font-size: $font-menu;
+
+      &--disabled {
+        border: 2px solid #d6d6d6 !important;
+        color: #d6d6d6 !important;
+      }
+
+      >.fa-check {
+        position: relative;
+        top: 2px;
+      }
+
+    }
+
+    &__title {
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+  }
+}
+
+
+.wizardbar {
+  font-size: $font-menu;
+  line-height: 1;
+  display: inline-block;
+  margin: -12px -12px 0 -12px;
+  cursor: context-menu;
+}
+
+.wizardbar-item {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  padding-right: 1.8em;
+  text-decoration: none;
+  transition: all 0.15s;
+  background-color: rgba(185, 185, 185, 0.1);
+  color: #c2bdbd;
+  text-align: center;
+  position: relative;
+  margin-right: 1px;
+  height: 50px;
+}
+
+.wizardbar-item:before,
+.wizardbar-item:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-width: 1.7em 0 1.7em 0.95em;
+  border-style: solid;
+  transition: all 0.15s;
+  position: absolute;
+  right: 100%;
+  top: -1px;
+}
+
+.wizardbar-item:before {
+  border-color: transparent transparent transparent rgba(145, 145, 145, 0.5);
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.wizardbar-item:after {
+  border-color: transparent transparent transparent $gray-background-base;
+  z-index: 1;
+  transform: rotate(180deg);
+  margin-right: -1px;
+}
+
+.current.wizardbar-item {
+  background-color: $white-base;
+  color: $gray-sidebar;
+  cursor: default;
+  border-bottom: 2px solid;
+}
+
+.current-dark.wizardbar-item {
+  background-color: #969696 !important;
+}
+
+.current--check {
+  border-bottom: 2px solid #a0d468 !important;
+}
+
+.current--check--disabled {
+  border-bottom: 2px solid #c2bdbd !important;
+}
+
+.current.wizardbar-item:after {
+  border-color: transparent transparent transparent $white-base;
+}
+
+.wizardbar-item:first-of-type:before {
+  border-color: transparent !important;
+}
+
+.wizardbar-item:first-of-type {
+  border-radius: 0.25em 0 0 0.25em;
+  padding-right: 1.3em;
+}
+.steps-action {
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.steps-action-for-commercial {
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  flex-wrap: wrap;
+  justify-content: space-betweens;
+}
+
+.next-btn-step {
+  padding: 8px 12px 8px 0 !important;
+}
+.next-btn-step-prv {
+  justify-content: flex-start !important;
+}
+
+.fa-step-backward {
+  border-radius: 2px 0px 0px 2px;
+  border-right: 1px solid #53a0e6;
+  margin-right: 22px;
+  width: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-step-forward {
+  border-radius: 2px 0px 0px 2px;
+  border-left: 1px solid #53a0e6;
+  margin-left: 22px;
+  width: 22px;
+  padding-left: 10px;
+  padding-left: 10px;
+  float: left;
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
+
+
+// title box
+.title-box {
+  width: 200px;
+  text-align: center;
+  border-radius: 2px 0 0 2px;
+  box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+  border-right: 5px solid;
+  background-color: transparent;
+  font-size: $font-menu;
+  font-weight: bold;
+  padding: 8px 0;
+  margin-bottom: 5px;
+  line-height: 19px;
+}
+
+.ant-table-tbody>tr.ant-table-row-selected>td {
+  background: rgba(76, 198, 255, 0.1);
+}
+
+
+//Popconfirm
+.ant-popover-message>.anticon {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-popover-buttons button:not(:first-child) {
+  margin-right: 8px;
+}
+
+.ant-popover-message>.anticon {
+  position: unset !important;
+}

@@ -1,0 +1,85 @@
+.introjs-tooltip {
+  opacity: 1 !important;
+  top: 80px;
+  padding: 10px;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 40%) !important;
+  width: 500px !important;
+  height: fit-content !important;
+  min-width: 500px !important;
+  max-width: 500px !important;
+}
+
+.introjs-tooltipbuttons {
+  border: none !important;
+  display: flex;
+  justify-content: end;
+}
+
+.introjs-bullets {
+  padding: 0 !important;
+}
+
+.introjs-progress {
+  margin: 5px !important;
+}
+
+.introjs-prevbutton {
+  float: none !important;
+}
+
+.introjs-nextbutton {
+  float: none !important;
+}
+
+.introjs-button:focus {
+  box-shadow: none !important;
+}
+
+.introjs-button {
+  color: #333 !important;
+  background-color: #ececec !important;
+  border-radius: 0.2em !important;
+  border: 1px solid #d4d4d4 !important;
+  font-size: 11px !important;
+}
+
+.introjs-bullets ul li a.active {
+  width: 6px !important;
+}
+
+.introjs-tooltiptext {
+  padding: 5px !important;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.introjs-skipbutton {
+  display: none !important;
+}
+
+.introjs-tooltip-header {
+  display: none;
+}
+
+.introjs-disabled {
+  color: #9a9a9a !important;
+  border-color: #d4d4d4 !important;
+  cursor: default !important;
+  background-color: #f4f4f4 !important;
+}
+
+// .introjs-helperNumberLayer {
+//   width: 15px;
+//   height: 15px;
+//   border: 2px solid red;
+//   position: absolute;
+//   z-index: 9999;
+// }
+
+.introjs-tooltipReferenceLayer * {
+  font-family: "w-yekan", "yekan", "vazir", Inter, ui-sans-serif,
+    "Apple Color Emoji", Helvetica, Arial, sans-serif !important;
+}

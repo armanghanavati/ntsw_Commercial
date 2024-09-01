@@ -1,0 +1,129 @@
+.modal {
+  &--title {
+    font-size: 1.1rem;
+    font-weight: bold !important;
+    padding: 0 20px;
+    color: unset;
+  }
+
+  &--text {
+    font-size: 0.9rem;
+    margin: 0px 0 20px 0;
+    padding: 0 20px;
+  }
+
+  &--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.ant-modal {
+  box-shadow: 0 0 40px rgb(0 0 0 / 50%);
+  padding-bottom: 0 !important;
+}
+
+.questionModal {
+  width: 40% !important;
+}
+
+.modaleIntroduction {
+  width: 40% !important;
+}
+
+.ant-modal-body {
+  padding: 14px 0px !important;
+  text-align: center;
+}
+
+.questionModal .ant-modal-body {
+  text-align: right;
+}
+
+.ant-modal-body > button {
+  margin: auto !important;
+}
+
+.ant-modal-content {
+  background-color: unset !important;
+}
+
+// modal inside of components for Complex operations
+.ant-modal-close {
+  left: 0 !important;
+  right: unset !important;
+}
+
+.ant-modal-title {
+  text-align: right !important;
+  font-size: 18px !important;
+  color: inherit !important;
+  font-weight: 300px !important;
+}
+
+.ant-modal-close-x {
+  color: $red-base;
+}
+
+.modal-body {
+  margin: 0 20px;
+}
+
+.ant-modal-footer {
+  display: flex;
+  border-top: 0;
+  // padding: 0;
+}
+
+.notColorFooter {
+  width: 100%;
+  display: flex;
+  padding: 10px 10px 20px;
+}
+
+.colorFooter {
+  width: 100%;
+  display: flex;
+  // background-color: $gray-background-base !important;
+  padding: 10px;
+}
+
+.ant-modal-header {
+  color: unset !important;
+  background-color: unset !important;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 20px 10px 15px !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .questionModal {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .questionModal {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .questionModal {
+    width: 80% !important;
+  }
+
+  .ant-modal-header {
+    padding: 10px !important;
+  }
+
+  .ant-modal-title {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .questionModal {
+    width: 90% !important;
+  }
+}

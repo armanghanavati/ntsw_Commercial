@@ -1,0 +1,24 @@
+.not-found {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'w-yekan', 'yekan', 'vazir';
+  padding: 100px 0;
+
+  .style-404 {
+    font-size: 62px;
+    margin-bottom: 30px;
+    color: $blue-input;
+  }
+
+  .not-found-btn {
+    display: flex;
+
+    button {
+      font-family: inherit !important;
+      background-color: $green-color-base;
+      color: $white-base;
+    }
+  }
+}

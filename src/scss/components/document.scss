@@ -1,0 +1,129 @@
+.document {
+  &-modal {
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: rgb(255 255 50 / 21%);
+      border-right: 4px solid orange;
+      padding: 5px 10px;
+      margin-left: 6px;
+      color: inherit;
+    }
+  }
+  &-show {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px;
+
+    &--container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      &__status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 0;
+      }
+      &__status-title {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: gray;
+        background-color: #e5e5e5;
+        padding: 0 9px;
+        min-height: 35px;
+      }
+      &__status-name {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: red;
+        background-color: #e5e5e5;
+        padding: 0 0 0 10px;
+        margin-left: 10px;
+      }
+    }
+    &--pictures {
+      display: flex;
+      min-height: 400px;
+      align-items: start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      &__picture {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        justify-content: center;
+
+        &__img {
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          width: 250px;
+          height: 150px;
+          align-items: center;
+          gap: 11px;
+          justify-content: center;
+          font-size: 12px;
+          color: gray;
+
+          &:-webkit-scrollbar-track {
+            background: unset;
+          }
+          &--pic {
+            width: 229px !important;
+            height: 100px !important;
+            cursor: pointer;
+            object-fit: contain;
+          }
+          &--caption {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .document-show--pictures {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .reset-captcha {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .captcha-question {
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reset-captcha {
+    width: 20%;
+  }
+
+  .captcha-question {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .captcha-question {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,85 @@
+.get-roles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 225px;
+
+  border-radius: 4px;
+  margin-bottom: 0 !important;
+  height: 33px;
+  font-size: 12px !important;
+
+  &--label {
+    white-space: nowrap;
+    height: 35px;
+    background: transparent;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 0px 4px 4px 0px !important;
+    width: 106px;
+    text-align: center;
+  }
+
+  &--option {
+    max-width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &--selector {
+    border-radius: 4px 0px 0px 4px !important;
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 0 0 0 0px !important;
+    border-radius: 4px 0px 0px 4px !important;
+    border-top: 1px solid $gray-border-box;
+    border-left: 1px solid $gray-border-box;
+    border-bottom: 1px solid $gray-border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+
+    &--green {
+      border-color: $valid-text !important;
+    }
+
+    &--orange {
+      border-color: $orange-text !important;
+    }
+
+    &--red {
+      border-color: $error-text !important;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+      border-top: 1px solid $gray-border-box;
+      border-left: 1px solid $gray-border-box;
+      border-bottom: 1px solid $gray-border-box;
+    }
+
+    &--error {
+      border-color: $error-text !important;
+
+      &:focus {
+        border-color: $error-text !important;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  select {
+    max-width: 500px;
+  }
+}

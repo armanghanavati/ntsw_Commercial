@@ -1,0 +1,36 @@
+.count-down {
+  margin-left: 10px;
+
+  &--text {
+    font-size: 10px;
+  }
+
+  &--timerbox {
+    padding: 0px 5px;
+    border: 1px solid #AEACAC;
+    border-radius: 3px;
+    font-size: 9px;
+  }
+
+  &--modal>.ant-statistic-content>.ant-statistic-content-value {
+    font-size: 28px !important;
+    background-color: $yellow-warning;
+    padding: 0 10px;
+    border-radius: 2px;
+  }
+
+  &--modal {
+    &__title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    &__content {
+      margin-top: 28px;
+    }
+  }
+}
+
+.ant-statistic-content {
+  color: unset !important;
+}

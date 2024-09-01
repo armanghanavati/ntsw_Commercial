@@ -1,0 +1,84 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 10000000;
+  background-color: rgba(0, 0, 0, 0.219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  &--text {
+    color: rgb(17, 129, 141);
+    padding: 30px 10px;
+    font-size: 12px;
+
+    >i {
+      margin-left: 10px;
+    }
+  }
+
+  &--cubes {
+    // display: grid;
+    // grid-template-areas: "cub2 cub1""cub3 cub4";
+    // gap: 5px;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+  }
+
+  &--cube {
+    position: absolute;
+
+    >img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &:before {}
+
+    &-1 {
+      top: 0;
+      left: 0;
+
+      >img {
+        animation: loading-cub1 3s infinite ease-in-out;
+      }
+    }
+
+    &-2 {
+      transform: rotate(360deg);
+      top: 0;
+      right: 0;
+
+      >img {
+        animation: loading-cub2 3s infinite ease-in-out;
+      }
+    }
+
+    &-3 {
+
+      right: 0;
+      bottom: 2px;
+
+      >img {
+        animation: loading-cub3 3s infinite ease-in-out;
+      }
+    }
+
+    &-4 {
+
+      bottom: 0;
+      left: 4px;
+
+      >img {
+        animation: loading-cub4 3s infinite ease-in-out;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,115 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+
+  &:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  &--sender {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    &__bolet {
+      background-color: gray;
+      -moz-border-radius: 128px;
+      -webkit-border-radius: 128px;
+      border-radius: 128px;
+      padding: 8px;
+      width: 24px;
+      height: 24px;
+      font-size: 16px;
+      color: #f0f0f0;
+      border: 0;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        display: block;
+        background-color: lightgray;
+        width: 4px;
+        height: auto;
+        position: absolute;
+        top: 27px;
+        right: 10px;
+        bottom: 7px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  &--date {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 42px;
+  }
+
+  &--text {
+    color: $black-base;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid;
+    border-color: inherit;
+    border-top: 0;
+    margin-right: 42px;
+    padding: 0 12px 10px 12px;
+    min-width: 200px;
+  }
+}
+
+.declaration-operation {
+  min-height: 73px;
+
+  &--container {
+    display: inline-block;
+    margin-top: 300px;
+    position: fixed;
+    height: -moz-fit-content;
+    width: -moz-fit-content;
+    overflow-y: auto;
+    box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px 0px;
+    width: fit-content;
+    padding: 20px 10px;
+    // max-height: 80px;
+    z-index: 200 !important;
+    bottom: 40px;
+    margin: 15px 0 0px 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .declaration-operation--container {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .declaration-operation--container {
+    bottom: 5px;
+  }
+}
